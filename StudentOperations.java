@@ -17,6 +17,16 @@ public class StudentOperations {
             student.display();
         }
     }
+
+    public void searchByPRN(long prn) {
+        for (Student student : students) {
+            if (student.getPRN() == prn) {
+                student.display();
+                return;
+            }
+        }
+        System.out.println("Student with PRN " + prn + " not found.");
+    }
 }
 
 
