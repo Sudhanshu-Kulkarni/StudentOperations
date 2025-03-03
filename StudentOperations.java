@@ -27,7 +27,7 @@ public class StudentOperations {
         }
         System.out.println("Student with PRN " + prn + " not found.");
     }
-    
+
     public void searchByName(String name) {
         for (Student student : students) {
             if (student.getName().equalsIgnoreCase(name)) {
@@ -36,6 +36,14 @@ public class StudentOperations {
             }
         }
         System.out.println("Student with name '" + name + "' not found.");
+    }
+
+    public void searchByPosition(int position) {
+        if (position > 0 && position <= students.size()) {
+            students.get(position - 1).display();
+        } else {
+            System.out.println("Invalid position.");
+        }
     }
 }
 
