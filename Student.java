@@ -22,6 +22,10 @@ public class Student {
     public long getPRN() {
         return prn;
     }
+    
+    public void display() {
+        System.out.println("Name: " + name + ", PRN: " + prn);
+    }
 }
 
 
