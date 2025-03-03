@@ -56,6 +56,17 @@ public class StudentOperations {
         }
         System.out.println("Student with PRN " + prn + " not found.");
     }
+    
+    public void deleteStudent(long prn) {
+        for (Student student : students) {
+            if (student.getPRN() == prn) {
+                students.remove(student);
+                System.out.println("Student removed successfully.");
+                return;
+            }
+        }
+        System.out.println("Student with PRN " + prn + " not found.");
+    }
 }
 
 
