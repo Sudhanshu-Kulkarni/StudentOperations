@@ -45,6 +45,17 @@ public class StudentOperations {
             System.out.println("Invalid position.");
         }
     }
+
+    public void updateStudent(long prn, String newName) {
+        for (Student student : students) {
+            if (student.getPRN() == prn) {
+                student.setName(newName);
+                System.out.println("Student details updated successfully.");
+                return;
+            }
+        }
+        System.out.println("Student with PRN " + prn + " not found.");
+    }
 }
 
 
