@@ -68,3 +68,9 @@ The main class that runs the program and manages user interactions.
 1. **Clone the repository** to your local machine:
    ```bash
    git clone https://github.com/Sudhanshu-Kulkarni/StudentOperations.git
+2. **Compile Files**
+   ```bash
+   javac *.java
+3. **Run the program using following command**
+   ```bash
+   java Main
